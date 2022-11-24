@@ -1,7 +1,8 @@
 import React from "react";
 
 const SingleBlog = () => {
-	return <div className="font-bold text-xl text-red-500">SingleBlog</div>;
+
+	return <div className="text-xl font-bold text-red-500">SingleBlog</div>;
 };
 
 export default SingleBlog;

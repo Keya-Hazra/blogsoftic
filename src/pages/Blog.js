@@ -14,7 +14,6 @@ const Blog = () => {
 
 	const dispatch = useDispatch();
 
-
 	useEffect(() => {
 		(async () => {
 			const postData = await axios.get(
@@ -80,14 +79,11 @@ const Blog = () => {
 		}
 	}
 	const pList = useSelector((state) => state.post.post);
+
 	useEffect(() => {
 		setFinalPost(post.slice(0, 20));
-
 		dispatch(postList(finalPost));
 	}, [post]);
-
-	console.log(finalPost);
-	// console.log("redux", pList);
 
 	return (
 		<div>
